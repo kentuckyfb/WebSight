@@ -1,0 +1,8 @@
+requests
+ssl
+OpenSSL
+socket
+pandas
+beautifulsoup4
+dash
+plotly

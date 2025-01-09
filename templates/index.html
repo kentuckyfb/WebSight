@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Analysis Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <h1>Website Analysis Dashboard</h1>
+    <form method="post" action="/analyze">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" name="url" required><br><br>
+        <button type="submit">Analyze</button>
+    </form>
+
+    <div id="results">
+        </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script> 
+</body>
+</html>
